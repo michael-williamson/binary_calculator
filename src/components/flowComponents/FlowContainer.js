@@ -9,8 +9,8 @@ export const FlowContainer = (props) => {
     for (let i = 0; i <= 7; i++) {
       flowDiagramCompArray.push(
         <FlowDiagram
-          stateA={`binaryStateA${i + 1}`}
-          stateB={`binaryStateB${i + 1}`}
+          key={i}
+          flowDiagram={`flowDiagram${i + 1}`}
           binaryStateObject={binaryStateObject}
         />
       );
