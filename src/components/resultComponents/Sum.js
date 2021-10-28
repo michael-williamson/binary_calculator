@@ -5,8 +5,10 @@ import { Box } from "@mui/system";
 export const Sum = (props) => {
   const { binaryStateObject } = props;
   return (
-    <Box fontSize={50} my={2}>
-      Sum
+    <Box my={2} bgcolor="secondary.main">
+      <Box fontSize={30} fontWeight="bold">
+        Sum
+      </Box>
       <BinarySum binaryStateObject={binaryStateObject} />
     </Box>
   );

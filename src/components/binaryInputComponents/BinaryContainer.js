@@ -35,7 +35,7 @@ export const BinaryContainer = (props) => {
   const { binaryStateObject, setBinaryStateObject } = props;
 
   return (
-    <Grid container item>
+    <Grid container item style={{ overflow: "scroll" }}>
       <Box mb={2} display="flex">
         {outPutInputBinary(
           binaryStateObject,

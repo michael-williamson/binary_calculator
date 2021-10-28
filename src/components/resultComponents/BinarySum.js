@@ -19,12 +19,18 @@ export const BinarySum = (props) => {
       display="flex"
       py={2}
       px={2}
-      bgcolor="secondary.main"
+      justifyContent="space-between"
       color="primary.main"
     >
-      <Box>{binaryString}</Box>
+      <Box>
+        <Box>Binary Form:</Box>
+        <Box>{binaryString}</Box>
+      </Box>
       <Box px={4}>or</Box>
-      <Box textAlign="right">{parseInt(binaryString, 2).toString()}</Box>
+      <Box>
+        <Box>Base 10 Form:</Box>
+        <Box textAlign="right">{parseInt(binaryString, 2).toString()}</Box>
+      </Box>
     </Box>
   );
 };
