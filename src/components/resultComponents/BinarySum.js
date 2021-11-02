@@ -21,6 +21,8 @@ export const BinarySum = (props) => {
       px={2}
       justifyContent="space-between"
       color="primary.main"
+      fontWeight="bold"
+      sx={{ fontSize: { lg: "30px" } }}
     >
       <Box>
         <Box>Binary Form:</Box>

@@ -61,7 +61,9 @@ export const BinaryInput = (props) => {
   };
   return (
     <Grid item>
-      <Box>{powerOfTwo}</Box>
+      <Box fontWeight="bold" color="secondary.main">
+        {powerOfTwo}
+      </Box>
       <TextField
         id="outlined-basic"
         variant="outlined"
