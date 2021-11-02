@@ -10,6 +10,7 @@ export const FlowContainer = (props) => {
       flowDiagramCompArray.push(
         <FlowDiagram
           key={i}
+          column={i}
           flowDiagram={`flowDiagram${i + 1}`}
           binaryStateObject={binaryStateObject}
         />
@@ -17,5 +18,9 @@ export const FlowContainer = (props) => {
     }
     return flowDiagramCompArray;
   };
-  return <Grid container>{renderFlowDiagrams()}</Grid>;
+  return (
+    <Grid container spacing={2}>
+      {renderFlowDiagrams()}
+    </Grid>
+  );
 };

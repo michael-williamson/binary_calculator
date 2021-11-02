@@ -6,7 +6,7 @@ export const Sum = (props) => {
   const { binaryStateObject } = props;
   return (
     <Box my={2} bgcolor="secondary.main">
-      <Box fontSize={30} fontWeight="bold">
+      <Box fontSize={30} fontWeight="bold" color="primary.main">
         Sum
       </Box>
       <BinarySum binaryStateObject={binaryStateObject} />
