@@ -1,6 +1,16 @@
 import React from "react";
 import { Grid, Box } from "@mui/material";
 import { BinaryInput } from "./BinaryInput";
+import { makeStyles } from "@mui/styles";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    overflow: "scroll",
+    [theme.breakpoints.up("sm")]: {
+      overflow: "hidden",
+    },
+  },
+}));
 
 const outPutInputBinary = (
   binaryStateObject,
@@ -33,9 +43,9 @@ const outPutInputBinary = (
 
 export const BinaryContainer = (props) => {
   const { binaryStateObject, setBinaryStateObject } = props;
-
+  const classes = useStyles();
   return (
-    <Grid container item>
+    <Grid container item className={classes.root}>
       <Box mb={2} display="flex">
         {outPutInputBinary(
           binaryStateObject,
