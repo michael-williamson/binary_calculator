@@ -18,6 +18,7 @@ const useStyles = makeStyles({
       inset: 0,
       position: "absolute",
       zIndex: -1,
+      borderRadius: "81px",
     },
   },
 });
@@ -25,16 +26,35 @@ const useStyles = makeStyles({
 export const Header = () => {
   const classes = useStyles();
   return (
-    <Box width={1} mb={2} className={classes.root}>
+    <Box
+      sx={{
+        py: { xs: 2 },
+        px: { xs: 2 },
+        background: "linear-gradient(280deg, #ffffff00,#6495edcf, white)",
+        border: "5px double white",
+        width: { xs: "81%", md: "60%", margin: "0 auto", borderRadius: 1 },
+      }}
+    >
       <Box
-        fontSize={40}
-        px={2}
-        py={4}
-        color="primary.main"
-        fontWeight="bold"
-        className={classes.headerText}
+        sx={{
+          borderRadius: "81px",
+          width: { xs: "100%", md: "84%" },
+          margin: "0 auto",
+        }}
+        className={classes.root}
       >
-        Binary Calculator
+        <Box
+          className={classes.headerText}
+          sx={{
+            fontSize: 40,
+            px: 2,
+            py: 4,
+            color: "primary.main",
+            fontWeight: "bold",
+          }}
+        >
+          Binary Calculator
+        </Box>
       </Box>
     </Box>
   );
