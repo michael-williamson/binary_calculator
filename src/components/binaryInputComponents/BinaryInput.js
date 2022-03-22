@@ -68,11 +68,16 @@ export const BinaryInput = (props) => {
         id="outlined-basic"
         variant="outlined"
         value={currentValue ? "1" : "0"}
+        sx={{ backgroundColor: "orange" }}
+        inputProps={{
+          sx: { color: "white", textAlign: "center", fontWeight: "bold" },
+        }}
       ></TextField>
       <Switch
         checked={currentValue}
         onChange={handleChange}
         color="secondary"
+        sx={{ color: "red" }}
       ></Switch>
     </Grid>
   );
