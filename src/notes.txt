@@ -1,0 +1,18 @@
+sumUpdater function: located in helperFunctions/index.js
+
+conditional statements:
+-I would like to update on click rather than updating with useEffect;
+-This leads to state not being updated and comparing values as to what they
+will be when they are updated;
+-First if...else if... block
+-checking if stateA or stateB is false && false or true && true.  Depending on 
+if event.target.checked is true or false 
+using tertiary operator solves this sequence.
+-the first AND will use result of first XOR understanding that a false XOR means
+that there was a true/false  combination in the previous state.  If checked = true, then it only means
+that the new state will be true/true and will satisfy AND.
+-Now determining the sum the XOR variable will be compared to the second XOR gate.
+sum was initialized as false, so running only true conditions will suffice given that the other cases 
+will equal variable sum's initialized value.
+-The secondAND will be set to either true or false one satisfied condition
+-the carryNext variable which will tell the next diagram whether it has a carry variable set to true or false;
