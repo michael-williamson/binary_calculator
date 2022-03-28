@@ -6,7 +6,7 @@
 
 ## Link to Site
 
-#### [https://binary_calculator.netlify.app/](https://binary_calculator.netlify.app/)
+#### [https://binarycalculatorapp.netlify.app/](https://binarycalculatorapp.netlify.app/)
 
 ## Table of Contents
 
